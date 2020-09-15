@@ -43,4 +43,12 @@ is tokenised into:
 
 " ['had', 'mobile', 'months', 'u', 'r', 'entitled', 'update', 'latest', 'colour', 'mobiles', 'camera', 'call', 'the', 'mobile', 'update', 'co', 'free'] "
 
-This looks good! 
+This looks good! After tokenising and fitting the BoW model we get the sparse matrix below. Each row is a text which has been transformed into a sparse vector.
+
+![](figures/ans_1.png)
+
+Now we are ready to fit the Naive Bayes model.
+
+## 3. Fit a model and predict
+
+### 3.1. Why Naive Bayes? 
