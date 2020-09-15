@@ -35,4 +35,12 @@ I have also tried:
 
 But they do not result in any improvement in performance so I drop them. However it is always good practice to try everything and then decide which course of action is the best for model performance.
 
-A sample text ''
+A sample text:
+
+" Had your mobile 11 months or more? U R entitled to Update to the latest colour mobiles with camera for Free! Call The Mobile Update Co FREE on 08002986030 " 
+
+is tokenised into:
+
+" ['had', 'mobile', 'months', 'u', 'r', 'entitled', 'update', 'latest', 'colour', 'mobiles', 'camera', 'call', 'the', 'mobile', 'update', 'co', 'free'] "
+
+This looks good! 
