@@ -53,4 +53,20 @@ Now we are ready to fit the Naive Bayes model.
 
 ### 3.1. Why Naive Bayes? 
 
-Naive Bayes is a simple classification model based on Bayes Theorem whose performance can rival current Machine Learning algorithms given the assumption made by Naive Bayes are correct. Naive Bayes is 'naive' because of the rather rigorous assumption it makes in order to keep the maths simple: it assumes conditional independence between any pair of features given the class table. In addition, we have to make the correct choice of the distribution of features (event model) as well. Surprisingly, despite the independence assumption never being satisfied in the real world, the model actually works quite well. While the model is inadequate when it comes to modelling the data, it excels at predicting and that is what we mainly use it for.      
+Naive Bayes is a simple classification model based on Bayes Theorem whose performance can rival current Machine Learning algorithms, especially when the dataset is small or medium-sized. 
+
+Naive Bayes is 'naive' because of the rather rigorous assumption it makes in order to keep the maths simple: it assumes conditional independence between any pair of features given the class table. In addition, we have to make the correct choice of the distribution of features (event models) as well. These assumptions are never statisfied in real life. However, it turns out that Naive Bayes works really well for prediction regardless. Naive Bayes has been used in spam classification thanks to its simplicity and requiring much less data than other deep learning models to perform well. Here are some pros and cons of Naive Bayes:
+
+Pros:
+- Easy to use.
+- Can be used in a wide range of problems
+- Traing model is fast
+- Need only a small amount of data to work well
+- Requires little to no hyperparameter tuning
+
+Cons:
+- Worse than Neural Network for larger dataset
+- Require to choose the correct distribution of features
+
+### 3.2. 
+- 
