@@ -74,4 +74,10 @@ Because of that, Naive Bayes has been a staple in text classification, thanks to
 
 Multinomial and Multivariate Bernoulli Naive Bayes are normally chosen for discrete features. 
 
-In this case, if we try both we will find out that Multinomial assumption actually performs better than Bernoulli. This is because  
+In this case, if we try both we will find out that Multinomial assumption actually performs better than Bernoulli. This is not that surprising because according to the histogram in section 1, length of a text can be an indicator of spam or ham. Bernoulli NB accepts binary features (whether a word appears in a text or not), and predict the label based on whether certain words appears in the text or not. On the other hand, Multinomial NB accept the count of each words, and predict using frequency of that word given the label. Multinomial actually retains some information about the length of the text, hence it works better. 
+
+In other tasks involving shorter texts, Bernoulli NB might work better. It is also extremely fast and can make predictions in real time. It is necessary to check both models if time permits to find which one is the most appropriate for your task.
+
+### 3.3 Result
+
+
