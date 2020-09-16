@@ -68,6 +68,10 @@ Cons:
 - Worse than Neural Network for larger dataset
 - Require to choose the correct distribution of features
 
+Because of that, Naive Bayes has been a staple in text classification, thanks to its ability to produce good result with small sample size.
+
 ### 3.2. Multivariate Bernoulli vs Multinomial?
 
-For discrete features in this case, we can choose the distribution of features Multivariate Bernoulli or Multinomial. These two distributions at first glance seem to be the same, but actually they lead to 
+Multinomial and Multivariate Bernoulli Naive Bayes are normally chosen for discrete features. 
+
+In this case, if we try both we will find out that Multinomial assumption actually performs better than Bernoulli. This is because  
