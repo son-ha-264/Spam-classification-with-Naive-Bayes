@@ -49,7 +49,7 @@ This looks good! After tokenising and fitting the BoW model we get the sparse ma
 
 Now we are ready to fit the Naive Bayes model.
 
-## 3. Fit a model and predict
+## 3. Fit and predict
 
 ### 3.1. Why Naive Bayes? 
 
@@ -68,5 +68,6 @@ Cons:
 - Worse than Neural Network for larger dataset
 - Require to choose the correct distribution of features
 
-### 3.2. 
-- 
+### 3.2. Multivariate Bernoulli vs Multinomial?
+
+For discrete features in this case, we can choose the distribution of features Multivariate Bernoulli or Multinomial. These two distributions at first glance seem to be the same, but actually they lead to 
