@@ -52,3 +52,5 @@ Now we are ready to fit the Naive Bayes model.
 ## 3. Fit a model and predict
 
 ### 3.1. Why Naive Bayes? 
+
+Naive Bayes is a simple classification model based on Bayes Theorem whose performance can rival current Machine Learning algorithms given the assumption made by Naive Bayes are correct. Naive Bayes is 'naive' because of the rather rigorous assumption it makes in order to keep the maths simple: it assumes conditional independence between any pair of features given the class table. In addition, we have to make the correct choice of the distribution of features (event model) as well. Surprisingly, despite the independence assumption never being satisfied in the real world, the model actually works quite well. While the model is inadequate when it comes to modelling the data, it excels at predicting and that is what we mainly use it for.      
