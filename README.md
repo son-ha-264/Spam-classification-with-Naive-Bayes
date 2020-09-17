@@ -68,7 +68,7 @@ Cons:
 - Worse than Neural Network for larger dataset
 - Require to choose the correct distribution of features
 
-Because of that, Naive Bayes has been a staple in text classification, thanks to its ability to produce good result with small sample size.
+Because of that, Naive Bayes has been a staple in text classification, thanks to its ability to produce good result with small dataset size.
 
 ### 3.2. Multivariate Bernoulli vs Multinomial?
 
@@ -79,5 +79,7 @@ In this case, if we try both we will find out that Multinomial assumption actual
 In other tasks involving shorter texts, Bernoulli NB might work better. It is also extremely fast and can make predictions in real time. It is necessary to check both models if time permits to find which one is the most appropriate for your task.
 
 ### 3.3 Result
+
+The table below is the f1-score for Mulinomial NB model.
 
 
