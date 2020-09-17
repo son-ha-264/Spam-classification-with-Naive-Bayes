@@ -90,4 +90,4 @@ Compare it to the f1-score for Bernoulli NB model:
 
 As we can see, Bernoulli NB scores much lower when it comes to predicting spam, with 0.75 f1-score compared to 0.91 f1-score of Multinoulli NB. 
 
-![](figures/table_5.png)
+![](figures/table_6.png)
