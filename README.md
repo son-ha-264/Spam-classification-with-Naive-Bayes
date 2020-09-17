@@ -90,4 +90,15 @@ Compare it to the f1-score for Bernoulli NB model:
 
 As we can see, Bernoulli NB scores much lower when it comes to predicting spam, with 0.75 f1-score compared to 0.91 f1-score of Multinoulli NB. 
 
+We can have a look at what texts our model predicts wrong. Some of the mistakes are due to the text being too short, or spam texts resembling closely to normal ham texts. Some are because of our model is good enough, or we drop out crucial information during the preprocessing step.
+
 ![](figures/table_6.png)
+
+## 4. Further improvements
+
+What steps can we take to further improve performance? Here are some possible solutions:
+- Get more data (quite obvious). But when you have a large quanity (millions) of texts you would rather use Neural Network to classify.
+- Spam usually have weird symbols (£,&,@,...). During preprocessing we can create a placeholder for all symbols so that count of all symbols is recorded.
+- Instead of using count of words, try other metric such as [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
+
+There is also the risk of [**Bayesian**](https://en.wikipedia.org/wiki/Bayesian_poisoning) [**Poisoning**](https://security.stackexchange.com/questions/12589/what-is-the-point-of-gibberish-spam/12592#12592), where spammers send spam texts with almost all 'innocent' words and a few 'spam' words. The aim is to confuse the Naive Bayes into thinking that spam words are innocent and there spam messages can go through. Research points out that Bayesian Poisoning is a real threat, but is impractical due to the sheer amount of spam have to be sent for an attack to have effect. However, Naive Bayes should be reset once in a while, with new spam messages correctly labelled if you plan to use this type of spam classifier for a long time.
