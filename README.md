@@ -80,6 +80,12 @@ In other tasks involving shorter texts, Bernoulli NB might work better. It is al
 
 ### 3.3 Result
 
-The table below is the f1-score for Mulinomial NB model.
+The table below is the f1-score for Mulinomial NB model:
 
+![](figures/table_3.png)
 
+Compare it to the f1-score for Bernoulli NB model:
+
+![](figures/table_4.png)
+
+As we can see, Bernoulli NB scores much lower when it comes to predicting spam, with 0.75 f1-score compared to 0.91 f1-score of Multinoulli NB. 
